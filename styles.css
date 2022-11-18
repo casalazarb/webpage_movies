@@ -1,0 +1,243 @@
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+     box-sizing: border-box;/*Easier to make layouts*/
+}
+
+*{
+   border:transparent solid 1px;
+}
+
+@font-face {
+    font-family: myFirstFont;/*to have available other font types*/
+    src: url(sansation_light.woff);
+}
+body{
+    margin-top: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1035px;
+    height: 100%;
+    background-color: white;
+}
+
+h3{
+  color:#262626; /*This sets the color of the text within the h3's*/
+  font-family: arial;
+  font-size: 20px;
+  font-style: oblique;
+}
+
+h2{
+    margin: 1% auto;
+    color:#262626; /*This sets the color of the text within the h3's*/
+    font-family: arial;
+    font-size: 20px;
+    font-style: oblique;
+  }
+
+p{
+   color:#262626; /*This sets the color of the text within the paragraphs*/
+   font-family: arial;
+   font-size: 21px;
+}
+
+#page_title_container{
+    border-radius: 25px;
+    margin: auto;
+    background-image: url("images_darren/darren_page_title.jpg");
+    height:100%;
+    width: 100%;
+}
+
+#page_title{
+    margin: auto;
+    color:white;
+    font-family: Trajan;
+    font-size: 350%;
+    text-align: center;
+}
+
+.movie_container{
+    border:0;
+    margin: 2% auto;
+    height: 100%;
+  }
+
+#fountain_title_container{
+    border:0;
+    display: table;/*to center vertically the title*/
+    vertical-align: middle;/*to center vertically title*/
+    background-image: url("images_darren/fountain_back_title.jpg");
+    background-size:auto;
+    height:23%;
+    width: 100%;
+}
+
+#fountain_title{
+    color:#fbb420; /*This sets the color of the class title to black*/
+    font-family: Franklin Gothic Heavy;
+    font-size: 60px;
+    margin-left: 4%;
+    margin-right: 4%;
+
+}
+
+#wrestler_title_container{
+    border:0;
+    display: table;/*to center vertically the title*/
+    vertical-align: middle;/*to center vertically title*/
+    background-image: url("images_darren/wrestler_back_title.jpg");
+    background-size: auto;
+    height:23%;
+    width: 100%;
+}
+
+#wrestler_title{
+    color:white; /*This sets the color of the class title to black*/
+    font-family: Impact;
+    font-size: 60px;
+    margin-left: 4%;
+    margin-right: 4%;
+
+}
+
+#swan_title_container{
+    border:0;
+    display: table;/*to center vertically the title*/
+    vertical-align: middle;/*to center vertically title*/
+    background-image: url("images_darren/swan_back_title.jpg");
+    background-size: auto  ;
+    height:23%;
+    width: 100%;
+}
+
+#swan_title{
+    color:white; /*This sets the color of the class title to black*/
+    font-family: Trajan;
+    font-size: 60px;
+    margin-left: 4%;
+    margin-right: 4%;
+
+}
+
+#mother_title_container{
+    border:0;
+    display: table;/*to center vertically the title*/
+    vertical-align: middle;/*to center vertically title*/
+    background-image: url("images_darren/mother_back_title.jpg");
+    background-size: auto  ;
+    height:23%;
+    width: 100%;
+}
+
+#mother_title{
+    color:white; /*This sets the color of the class title to black*/
+    font-family: Old English Text MT;
+    font-size: 60px;
+    margin-left: 4%;
+    margin-right: 4%;
+
+}
+
+.movie_features_container{
+    border:0;
+    display: -webkit-flex;/*In order to support Safari and side by side*/
+    display:flex;/*poster and description side by side*/
+    height:77%;
+    width:100%;
+}
+
+.film_poster_container{
+    min-height: 467px;
+    border: 0;
+    height: 100%;
+    width: 65%;
+    }
+
+div.film_poster_container img{
+    min-height: 467px;
+    border:0;
+    height: 100%;
+    width:100%;
+}
+
+.movie_description_container{
+    min-height: 467px;
+    border:0;
+    background-color:#cfe1e2;
+    height: 100%;
+    width:35%;
+}
+
+.movie_description_text_container{
+    position: relative;
+    border:0;
+    height: 100%;
+    width: 100%;
+  }
+
+.movie_description_text{
+
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 4%;
+    text-align: justify;
+
+    }
+
+.movie_references_container{
+   border: 0;
+   height: 20%;
+   width: 100%;
+   margin-bottom: 3.3%;
+}
+
+.movie_references{
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 2%;
+    font-family: arial;
+    font-size: 21px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding: 0.5rem 2rem 1rem 2rem;
+}
+
+input[type="text"] {
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+#food_image{
+    width: 5%;
+}
+
+.links_grid{
+    --gap: 10px;
+    --num-cols: 2;
+    --row-height: 300px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display:grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+
+}
+
+.img_grid{
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,87 @@
+<!--Swan-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Black Swan</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <script>
+            // Run script once DOM is loaded
+            document.addEventListener('DOMContentLoaded', function() {
+                // Check the response submission
+                document.querySelector('#check').addEventListener('click', function() {
+                    let input = document.querySelector('input');
+                    if (input.value === 'lake') {
+                        input.style.backgroundColor = 'green';
+                        document.getElementById("food_image").src = "images_darren/ice_cream.png";
+                    } else {
+                        input.style.backgroundColor = 'red';
+                        document.getElementById("food_image").src = "images_darren/broccoli.png";
+                    }
+                });
+
+            });
+        </script>
+
+    </head>
+
+<body>
+
+    <!--This is the container for every movie element, imgages, text-->
+    <div class="movie_container">
+        <div id="swan_title_container">
+            <h2 id="swan_title">BLACK SWAN (2010)</h2>
+        </div>
+        <div class="movie_features_container">
+            <div class="film_poster_container">
+                <img src="images_darren/swan_poster.jpg" alt="Black Swan Poster"/>
+            </div>
+
+        <div class="movie_description_container">
+            <div class="movie_description_text_container">
+                <div class="movie_description_text">
+                    <h3>Black Swan</h3>
+                    <p>
+                        A ballerina must dig deep into her dark side to achive a credible performance
+                        of the role of her lifetime. She is sent into a journey through the fear,
+                        anxiety and disruption. Someone has to pay the price in this relentless search
+                        for perfection surrounded by <span style="color:#800000">mental fragility.</span>
+                    </p>
+                </div><!--It closes movie_descritption_text-->
+            </div><!--It closes movie_descritption_text_container-->
+
+            <div class="movie_references_container">
+                <div class="movie_references">
+                    Web references:<br>
+                    <a href="http://www.imdb.com/title/tt0947798/?ref_=fn_al_tt_1">IMDb</a>
+                    <a href="https://en.wikipedia.org/wiki/Black_Swan_(film)">Wikipedia</a>
+                    <a href="index.html">Home</a>
+                </div><!--It closes movie_references-->
+            </div><!--It closes movie_references_container-->
+         </div><!--It closes movie_descritption_container-->
+    </div><!--It closes movie_features_container-->
+</div><!--It closes movie_container-->
+
+
+<!-- Trivia for the user container-->
+<div class="container">
+
+    <div class="section">
+        <h2>Win a sweet ice cream!!!</h2>
+        <h3>The swans live in a __________</h3>
+        <input type="text"></input>
+        <button id="check">Check Answer</button>
+
+        <!--feedback to the user, if their answer was right, this is a placeholder-->
+        <img id="food_image" src="">
+
+    </div>
+</div>
+
+</body>
+</html>
+<!--End of Swan-->
